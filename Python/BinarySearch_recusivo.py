@@ -14,9 +14,17 @@ def binarysearch_recursive (a, x , lb , ub):
             else:
                 return binarysearch_recursive(a,x,middlepoint +1,ub)
 
-a = [2,3,4,10,40]
-x = 8
-result = binarysearch_recursive(a, x,0 , len(a) - 1)
+
+l = input()
+al = l.split(",")
+c=[]
+d=int(input("ingrese numero"));
+for i in range (len(al)):
+   c.append(int(al[i]))
+   
+result = binarysearch_recursive(c, d,0 , len(c) - 1)
+
+
 
 if result != -1:
     print ("El numero esta en el indice %d" % result)
