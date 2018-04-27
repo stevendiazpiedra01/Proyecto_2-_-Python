@@ -18,7 +18,7 @@ def binarysearch_recursive (a, x , lb , ub):
 l = input()
 al = l.split(",")
 c=[]
-d=int(input("ingrese numero"));
+d=int(input("ingrese numero"))
 for i in range (len(al)):
    c.append(int(al[i]))
    
