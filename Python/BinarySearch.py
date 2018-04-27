@@ -18,6 +18,12 @@ def binarysearch(a,x):
         index = lowerbound
 
     return index
+l = input()
+a= l.split(",")
+c = []
+d=input("ingrese numero");
+for i in range(0, len(a),1):
+    c.append(a[i])
 
-print (binarysearch([1,2,3,5,8],8))
-print (binarysearch([1,2,3,5,8],5))
+print (binarysearch(c,d))
+print (binarysearch([1,5,6,9,10,11,15,78],78))
