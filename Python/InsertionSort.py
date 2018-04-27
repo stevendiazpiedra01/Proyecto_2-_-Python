@@ -8,6 +8,12 @@ def InsertionSort (a):
             index = index -1
     a[index] = x
 
-a = [54,265,68,98,75]
-InsertionSort(a)
-print(a)
+
+l = input()
+al = l.split(",")
+c=[]
+
+for i in range (len(al)):
+   c.append(int(al[i]))
+InsertionSort(c)
+print(c)
