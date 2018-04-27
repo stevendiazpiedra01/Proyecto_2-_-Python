@@ -19,8 +19,13 @@ def interpolationsearch ( a, x):
 
     return index
 
-
-index = interpolationsearch([10, 12, 13, 16, 18, 19, 20, 21,22, 23, 24, 33, 35, 42, 47], 84)
+l = input()
+a = l.split(",")
+c=[]
+d=int(input("ingrese numero"));
+for i in range (len(a)):
+   c.append(int(a[i]))
+index = interpolationsearch(c, d)
 
 if index != -1:
     print ("El numero esta en el indice %d" % index)
